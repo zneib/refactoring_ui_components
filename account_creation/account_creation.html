@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="account_creation.css">
+  <title>Account Creation</title>
+</head>
+<body>
+  <header>
+    <h2>Choose the amount of storage that's right for you</h2>
+    <div class="billing-options">
+      <input type="radio" name="billing" id="yearly" checked> Bill yearly
+      <input type="radio" name="billing" id="montly"> Bill monthly
+    </div>
+  </header>
+  <div class="divider"></div>
+  <main>
+    <aside>
+      <form>
+        <input type="text" name="fullName" placeholder="Full name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+        <button type="submit">Create Account</button>
+      </form>
+    </aside>
+    <aside>
+      <div class="package-card">
+        <i class="fas fa-check-circle checkmark" aria-hidden="true"></i>
+        <p class="package-title">Essential</p>
+        <p class="package-price"><span class="package-capacity">200</span> <span class="package-measurement">GB</span> of storage <span class="package-cost">$10</span> / mo</p>
+      </div>
+      <div class="package-card">
+        <i class="fas fa-check-circle checkmark" aria-hidden="true"></i>
+        <p class="package-title">Pro</p>
+        <p class="package-price"><span class="package-capacity">1</span> <span class="package-measurement">TB</span> of storage <span class="package-cost">$20</span> / mo</p>
+      </div>
+      <div class="package-card">
+        <i class="fas fa-check-circle checkmark" aria-hidden="true"></i>
+        <p class="package-title">Premium</p>
+        <p class="package-price"><span class="package-capacity">2</span> <span class="package-measurement">TB</span> of storage <span class="package-cost">$40</span> / mo</p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
