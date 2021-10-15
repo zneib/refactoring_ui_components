@@ -22,6 +22,7 @@ header {
 .divider {
   width: 800px;
   border: 1px solid grey;
+  margin-bottom: 15px;
 }
 
 h2 {
@@ -46,11 +47,11 @@ aside {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 form {
-
+  padding-right: 10px;
 }
 
 form > input {
@@ -61,6 +62,10 @@ form > input {
   width: 100%;
 }
 
+input:nth-child(1) {
+  margin-top: 0;
+}
+
 button[type="submit"] {
   border: none;
   border-radius: 5px;
@@ -69,13 +74,14 @@ button[type="submit"] {
   padding: 15px;
   text-transform: uppercase;
   width: 100%;
+  cursor: pointer;
 }
 
 .package-card {
-  border: 1px solid black;
+  background: #fff;
   border-radius: 5px;
   padding: 0 10px;
-  margin: 15px 0;
+  /* margin: 15px 0; */
   cursor: pointer;
   position: relative;
 }
@@ -103,8 +109,12 @@ button[type="submit"] {
   font-weight: bold;
 }
 
+.package-cost-right {
+  text-align: right;
+}
+
 .checkmark {
   position: absolute;
   right: 10px;
-  top: 5px;
+  top: 10px;
 }
