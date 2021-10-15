@@ -12,9 +12,21 @@
   <header>
     <h2>Choose the amount of storage that's right for you</h2>
     <div class="billing-options">
-      <input type="radio" name="billing" id="yearly" checked> Bill yearly
-      <input type="radio" name="billing" id="montly"> Bill monthly
+      <span>Bill yearly</span>
+      <input type="checkbox" id="billing" class="toggle">
+      <label for="billing" class="label">
+        <div class="ball"></div>
+      </label>
+      <span>Bill monthly</span>
     </div>
+    <!-- <div class="billing-options">
+      <input type="checkbox" name="billing" id="yearly" checked>
+      <label for="yearly" class="label">
+        Bill yearly
+      </label>
+      <input type="checkbox" name="billing" id="monthly">
+      <label for="monthly">Bill monthly</label>
+    </div> -->
   </header>
   <div class="divider"></div>
   <main>
