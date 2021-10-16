@@ -32,10 +32,17 @@ h2 {
 }
 
 .billing-options {
-  display: inline-block;
+  display: flex;
   width: 50%;
   text-align: right;
   padding-top: 30px;
+  position: relative;
+  justify-content: right;
+}
+
+.billing-options > span:nth-child(1) {
+  position: absolute;
+  right: 140px;
 }
 
 .toggle {
